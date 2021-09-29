@@ -22,11 +22,11 @@ function game() {
       ).toLowerCase();
       let computerOption = computerPlay();
 
-      console.log(computerOption);
-      console.log(playerOption);
-      console.log(`Current round: ${round}`);
+    //   console.log(computerOption);
+    //   console.log(playerOption);
+    //   console.log(`Current round: ${round}`);
 
-      /// Comparison logic
+      // Comparison logic
       if (playerOption === computerOption) {
         alert("Tie!");
       } else if (playerOption === "rock" && computerOption === "paper") {
@@ -51,8 +51,8 @@ function game() {
 
       round += 1;
 
-      console.log(playerScore);
-      console.log(computerScore);
+    //   console.log(playerScore);
+    //   console.log(computerScore);
     }
   }
 

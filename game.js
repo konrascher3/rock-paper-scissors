@@ -3,7 +3,7 @@ function game() {
   let playerScore = Number("");
   let computerScore = Number("");
 
-  while (round <= 5) {
+  while (round <= 1) {
     function computerPlay() {
       // function computerPlay randomly returns the values
       // 'Rock', 'Paper' or 'Scissors', i.e. randomly select

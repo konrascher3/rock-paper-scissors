@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 .main-container {
@@ -10,7 +11,15 @@
     align-items: center;
 }
 
+.top {
+    display: flex
+}
+
 .middle {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.playerScore, .computerScore {
+    text-align: center;
 }

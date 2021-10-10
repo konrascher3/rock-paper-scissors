@@ -20,6 +20,16 @@
     flex-direction: row;
 }
 
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currentRound {
+    display: flex;
+}
+
 .playerScore, .computerScore {
     text-align: center;
 }

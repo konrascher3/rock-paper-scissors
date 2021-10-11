@@ -5,8 +5,8 @@ const roundHTML = document.querySelector('.round');
 const commentHTML = document.querySelector('.comment');
 
 
-console.log(playerScoreHTML.textContent)
-console.log(computerScoreHTML.textContent)
+// console.log(playerScoreHTML.textContent)
+// console.log(computerScoreHTML.textContent)
 
 
 let round = Number("1");
@@ -36,9 +36,9 @@ let computerScore = Number("");
   function playRound(playerOption) { 
     let computerOption = computerPlay();
 
-    console.log(computerOption);
-    console.log(playerOption);
-    console.log(`Current round: ${round}`);
+    // console.log(computerOption);
+    // console.log(playerOption);
+    // console.log(`Current round: ${round}`);
 
     // Comparison logic
     if (playerOption === computerOption) {

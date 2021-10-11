@@ -17,8 +17,8 @@ let computerScore = Number("");
 
   for (var i = 0; i < button.length; i++) {
     button[i].addEventListener('click', (event) => {
-      playRound(event.target.value);
-      // console.log(playerOption);
+      playRound(event.target.parentNode.value);
+      // console.log(event.target.value);
       
     })
   } 
@@ -66,15 +66,15 @@ let computerScore = Number("");
     function winnerText(playerScore, computerScore) {
       if (playerScore === computerScore) {
       commentHTML.textContent = (
-        `What an exiting match!       Your score: ${playerScore}  Computer Score: ${computerScore}`
+        `Game Over! Tie!`
       );
-      } else if (playerScore >= computerScore) {
+      } else if (playerScore > computerScore) {
       commentHTML.textContent = (
-        `You Win!         Your score: ${playerScore}  Computer Score: ${computerScore}`
+        `Game Over! You won!`
       );
-      } else if (playerScore <= computerScore) {
+      } else if (playerScore < computerScore) {
       commentHTML.textContent = (
-        `You Loose!       Your score: ${playerScore}  Computer Score: ${computerScore}`
+        `Game Over! You lost!`
       )};
     }
 
@@ -90,6 +90,15 @@ let computerScore = Number("");
     }
 
     if (round === 6) {
+      const middle = document.querySelector('.middle');
+      const newRound = document.createElement('button');
+      const currentRound = document.querySelector('.currentRound')
+      newRound.innerHTML = '<img src="https://img.icons8.com/ios-glyphs/100/000000/recurring-appointment.png"/>';
+      newRound.setAttribute('id','newRound');
+      newRound.setAttribute('onclick','window.location.reload();');
+      middle.parentNode.replaceChild(newRound, middle);
+      currentRound.textContent = " Restart Game";
+
       winnerText(playerScore, computerScore);
     }
   }

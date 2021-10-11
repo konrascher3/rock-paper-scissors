@@ -13,13 +13,13 @@ let round = Number("1");
 let playerScore = Number("");
 let computerScore = Number("");
 
+  
 
-
-  for (var i = 0; i < button.length; i++) {
+  for (let i = 0; i < button.length; i++) {
     button[i].addEventListener('click', (event) => {
       playRound(event.target.parentNode.value);
       // console.log(event.target.value);
-      
+
     })
   } 
 

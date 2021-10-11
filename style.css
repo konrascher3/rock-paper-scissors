@@ -1,84 +1,102 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 20px;;
-    color: rgb(28, 28, 30);
-    /* border: 1px solid red; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 20px;
+  color: rgb(28, 28, 30);
+  /* border: 1px solid red; */
 }
 
-body, button {
-    background: rgb(235, 235, 240);
+body,
+button {
+  background: rgb(235, 235, 240);
 }
 
 button {
-    border: 0;
-    border-radius: 15px;
-    border: 3px solid rgb(28, 28, 30);
-    transition: 0.5s;
-    display: flex;
-    flex: 1;
+  border: 0;
+  border-radius: 15px;
+  border: 3px solid rgb(28, 28, 30);
+  transition: 0.5s;
+  display: flex;
+  flex: 1;
 }
 
 button:hover {
-    cursor: pointer;
-    background: linear-gradient( rgb(100, 210, 255), rgb(0, 122, 255));
-}
-
-main {
+  cursor: pointer;
+  background: linear-gradient(rgb(100, 210, 255), rgb(0, 122, 255));
+  box-shadow: 0 0 0.1rem rgb(28, 28, 30);
+  /* transform: scale(1.1); */
 
 }
 
 .playField {
-    border-radius: 15px;
-    border: 3px solid rgb(28, 28, 30);
-    margin: 20px;
+  border-radius: 15px;
+  border: 3px solid rgb(28, 28, 30);
+  margin: 20px;
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .top {
-    display: flex
+  display: flex;
 }
 
 .middle {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .overview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .currentRound {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 
-.playerCard, .computerCard {
-    padding: 20px 10px 10px 10px;
+.playerCard,
+.computerCard {
+  padding: 20px 10px 10px 10px;
 }
 
 .currentRound {
-    padding: 10px;
+  padding: 10px;
 }
 
 .comment {
-    padding: 10px;
+  padding: 10px;
 }
 
 img {
-    padding:5px;
+  padding: 5px;
 }
 
-.playerScore, .computerScore {
-    text-align: center;
+img:hover {
+    animation: shake 0.5s infinite;
+    animation-timing-function: linear;   
+}
+
+@keyframes shake {
+    0% { transform: 
+        rotate(10deg); }
+        50% { transform: 
+        rotate(-10deg); }
+        100% { transform: 
+        rotate(10deg); 
+    }
+}
+
+
+.playerScore,
+.computerScore {
+  text-align: center;
 }

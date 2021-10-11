@@ -44,22 +44,22 @@ let computerScore = Number("");
     if (playerOption === computerOption) {
       commentHTML.textContent = "Tie!";
     } else if (playerOption === "rock" && computerOption === "paper") {
-      commentHTML.textContent = "You Loose! Paper beats Rock!";
+      commentHTML.textContent = "You Lost! Paper beats Rock!";
       computerScore += 1;
     } else if (playerOption === "rock" && computerOption === "scissors") {
-      commentHTML.textContent = "You Win! Rock beats Scissors!";
+      commentHTML.textContent = "You Won! Rock beats Scissors!";
       playerScore += 1;
     } else if (playerOption === "scissors" && computerOption === "rock") {
-      commentHTML.textContent = "You Loose! Rock beats Scissors!";
+      commentHTML.textContent = "You Lost! Rock beats Scissors!";
       computerScore += 1;
     } else if (playerOption === "paper" && computerOption === "rock") {
-      commentHTML.textContent = "You Win! Paper beats Rock!";
+      commentHTML.textContent = "You Won! Paper beats Rock!";
       playerScore += 1;
     } else if (playerOption === "paper" && computerOption === "scissors") {
-      commentHTML.textContent = "You Loose! Scissors beats Paper!";
+      commentHTML.textContent = "You Lost! Scissors beats Paper!";
       computerScore += 1;
     } else if (playerOption === "scissors" && computerOption === "paper") {
-      commentHTML.textContent = "You Win! Scissors beats Paper!";
+      commentHTML.textContent = "You Won! Scissors beats Paper!";
       playerScore += 1;
     }
 
@@ -70,11 +70,11 @@ let computerScore = Number("");
       );
       } else if (playerScore > computerScore) {
       commentHTML.textContent = (
-        `Game Over! You won!`
+        `Game Over! You Won the Game!`
       );
       } else if (playerScore < computerScore) {
       commentHTML.textContent = (
-        `Game Over! You lost!`
+        `Game Over! You Lost the Game!`
       )};
     }
 
